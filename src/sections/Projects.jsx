@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Joint Security web app',
-    description: 'Personell booking web application',
+    description: 'Security booking web application',
     image: '/projects/joint_security.PNG',
     tags: ['Nextjs', 'typescript', 'tailwindcss', 'nodemailer'],
     link: 'https://joint-security-service.vercel.app/',
@@ -95,12 +95,16 @@ export const Projects = () => {
                   <a
                     href={project.link}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blanck"
+                    rel="noreferrer"
                   >
                     <ArrowUp className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    target="_blanck"
+                    rel="noreferrer"
                   >
                     <FaGithub className="w-5 h-5" />
                   </a>
