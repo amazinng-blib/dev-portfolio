@@ -93,16 +93,18 @@ export const Testimonials = () => {
         <div className="max-w-4xl mx-auto ">
           <div className="relative">
             {/* main testimonial */}
-            <div className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200 ">
+            <div
+              key={activeIndex}
+              className="glass p-8 rounded-3xl md:p-12 glow-border animate-fade-in animation-delay-200 "
+            >
               <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center ">
                 <Quote className="w-6 h-6 text-primary-foreground" />
               </div>
-              {/* for adding quote use blockquote tag */}
-              <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
+              <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4 animate-fade-in animation-delay-100">
                 "{testimonials[activeIndex].quote}"
               </blockquote>
-              <div className="flex items-center gap-4">
-                {/* <img src={testimonials[0].avatar} /> */}
+              <div className="flex items-center gap-4 animate-fade-in animation-delay-200">
+                {/* <img src={testimonials[activeIndex].avatar} /> */}
                 <FirstAvatar className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20" />
                 <div>
                   <div className="font-semibold">
