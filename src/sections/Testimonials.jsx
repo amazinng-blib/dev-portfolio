@@ -128,6 +128,7 @@ export const Testimonials = () => {
                 {testimonials.map((_, i) => (
                   <button
                     onClick={() => setActiveIndex(i)}
+                    key={i}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${i === activeIndex ? 'w-8 bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`}
                   />
                 ))}
