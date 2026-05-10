@@ -50,14 +50,14 @@ export const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software developer with a strong focus on clean
-                code, performance optimization, and collaboration. With a
+                I&apos;m a passionate software developer with a strong focus on
+                clean code, performance optimization, and collaboration. With a
                 background in computer science and a deep understanding of
                 software development principles, I bring a unique perspective to
                 the world of software engineering.{' '}
               </p>
               <p>
-                I specialize i n React, Next.js, and Node.js, and have a strong
+                I specialize in React, Next.js, and Node.js, and have a strong
                 passion for creating user-friendly and efficient web
                 applications. My expertise in these technologies allows me to
                 deliver high-quality software solutions that meet the needs of
@@ -65,10 +65,10 @@ export const About = () => {
               </p>
 
               <p>
-                I'm committed to staying up-to-date with the latest industry
-                trends and best practices, and I'm always looking for ways to
-                improve my skills and knowledge in the ever-evolving world of
-                software development.{' '}
+                I&apos;m committed to staying up-to-date with the latest
+                industry trends and best practices, and I&apos;m always looking
+                for ways to improve my skills and knowledge in the ever-evolving
+                world of software development.{' '}
               </p>
             </div>
             <div className="glass rounded-2xl px-6 glow-border animate-fade-in animation-delay-300">

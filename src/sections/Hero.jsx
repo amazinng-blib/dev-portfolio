@@ -98,12 +98,12 @@ export const Hero = () => {
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Nwankwo Ernest Onyebuchi - a passionate software
+                Hi, I&apos;m Nwankwo Ernest Onyebuchi - a passionate software
                 engineer specializing in React, Next.Js, Typescript, and Python.
                 I create seamless web experiences with a focus on performance
                 and user-centric design. With a knack for problem-solving and a
                 love for clean code, I bring ideas to life in the digital realm.
-                Let's build something amazing together!
+                Let&apos;s build something amazing together!
               </p>
             </div>
             {/* CTAS */}
@@ -121,9 +121,12 @@ export const Hero = () => {
               <span className="text-sm text-muted-foreground">Follow me: </span>
 
               {[
-                { icon: FaGithub, href: '#' },
-                { icon: FaLinkedin, href: '#' },
-                { icon: FaTwitter, href: '#' },
+                { icon: FaGithub, href: 'https://github.com/amazinng-blib' },
+                {
+                  icon: FaLinkedin,
+                  href: 'https://www.linkedin.com/in/ernestnwankwo/',
+                },
+                { icon: FaTwitter, href: 'https://x.com/NwankwoErnestO2' },
               ].map((social, idx) => (
                 <a
                   key={idx}
