@@ -25,6 +25,23 @@ const skills = [
   'Javascript',
   'Docker',
 ];
+
+const handleDownloadCV = () => {
+  const link = document.createElement('a');
+  link.href = '/ERNEST_NWANKWO.docx';
+  link.download = 'ERNEST_NWANKWO.docx';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+const handleContactScroll = () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -91,10 +108,10 @@ export const Hero = () => {
             </div>
             {/* CTAS */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button size="lg" onClick={handleContactScroll}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton onClick={handleDownloadCV}>
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
