@@ -7,7 +7,7 @@ import {
   Send,
 } from 'lucide-react';
 import { Button } from '@/components/Button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 const contactInfo = [
   {
@@ -45,6 +45,23 @@ export const Contact = () => {
     type: null, // success or error
     message: '',
   });
+  const [isExiting, setIsExiting] = useState(false);
+
+  // Auto-clear status message after 5 seconds with exit animation
+  useEffect(() => {
+    if (submitStatus.type) {
+      setIsExiting(false);
+      const exitTimer = setTimeout(() => setIsExiting(true), 5000);
+      const clearTimer = setTimeout(() => {
+        setSubmitStatus({ type: null, message: '' });
+        setIsExiting(false);
+      }, 5500); // 5s visible + 0.5s animation
+      return () => {
+        clearTimeout(exitTimer);
+        clearTimeout(clearTimer);
+      };
+    }
+  }, [submitStatus.type]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -197,16 +214,16 @@ export const Contact = () => {
 
               {submitStatus.type && (
                 <div
-                  className={`flex items-center gap-3 p-4 rounded-xl  ${
+                  className={`flex items-center gap-3 p-4 rounded-xl ${
                     submitStatus.type === 'success'
                       ? 'bg-green-500/10 border border-green-500/10 text-green-400'
                       : 'bg-red-500/10 border border-red-500/10 text-red-400'
-                  }`}
+                  } ${isExiting ? 'animate-fade-out' : 'animate-fade-in'}`}
                 >
                   {submitStatus.type === 'success' ? (
-                    <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 shrink-0" />
                   ) : (
-                    <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    <AlertCircle className="w-5 h-5 shrink-0" />
                   )}
                   <p className="text-sm">{submitStatus.message}</p>
                 </div>
