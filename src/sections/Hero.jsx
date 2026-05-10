@@ -28,7 +28,7 @@ const skills = [
 
 const handleDownloadCV = () => {
   const link = document.createElement('a');
-  link.href = '/ERNEST_NWANKWO.docx';
+  link.href = '/projects/ERNEST_NWANKWO.docx';
   link.download = 'ERNEST_NWANKWO.docx';
   document.body.appendChild(link);
   link.click();
