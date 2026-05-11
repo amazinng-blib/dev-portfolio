@@ -1,12 +1,4 @@
-import {
-  User,
-  Briefcase,
-  Code,
-  Star,
-  Quote,
-  ChevronLeft,
-  ChevronRight,
-} from 'lucide-react';
+import { User, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import { FaUserCircle, FaGithub, FaRegSmile } from 'react-icons/fa';
 
@@ -14,44 +6,44 @@ const testimonials = [
   {
     quote:
       'Working with Ernest was seamless. The platform was fast, responsive, and exceeded our expectations.',
-    author: 'Sophia Williams',
+    author: 'Samuel Oluwatimileyin',
     role: 'Product Manager',
     avatar: FaUserCircle,
   },
   {
     quote:
       'The attention to detail and clean code structure made the entire project easy to scale and maintain.',
-    author: 'Daniel Brooks',
+    author: 'Akaolisa Obinna',
     role: 'Software Engineer',
-    avatar: Code,
+    avatar: FaUserCircle,
   },
   {
     quote:
       "Our team's productivity improved significantly after integrating the custom dashboard solution.",
-    author: 'Amara Okafor',
+    author: 'Ogeneruke Godwin.',
     role: 'Operations Lead',
-    avatar: Briefcase,
+    avatar: FaUserCircle,
   },
   {
     quote:
       'Excellent communication and professional delivery from start to finish. Highly recommended.',
-    author: 'Michael Chen',
+    author: 'Nwokoye Christopher',
     role: 'Startup Founder',
-    avatar: FaGithub,
+    avatar: FaUserCircle,
   },
   {
     quote:
       'The UI/UX quality was outstanding. Every interaction felt polished and intuitive.',
-    author: 'Isabella Martinez',
+    author: 'Faaruq azeez',
     role: 'UI/UX Designer',
-    avatar: Star,
+    avatar: FaUserCircle,
   },
   {
     quote:
       'Reliable, creative, and highly skilled developer. Delivered beyond the agreed requirements.',
-    author: 'David Johnson',
+    author: 'Onuorah Bonaventure',
     role: 'Tech Consultant',
-    avatar: FaRegSmile,
+    avatar: FaUserCircle,
   },
 ];
 

@@ -4,7 +4,7 @@ import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
 
 const projects = [
   {
-    title: 'Relect web app',
+    title: 'Reflect web app',
     description:
       'Reflect web app is a powerful web app were you capture your thoughts, track your moods, and reflect on your journey in a beautiful, secure space',
     image: '/projects/reflect.PNG',
@@ -21,7 +21,7 @@ const projects = [
     github: 'https://github.com/amazinng-blib/Firepips',
   },
   {
-    title: 'Real state web app',
+    title: 'Homyz - Real Estate Web App',
     description:
       'House booking web app that allows users to book an apartment in any countries of the world',
     image: '/projects/real_state.PNG',

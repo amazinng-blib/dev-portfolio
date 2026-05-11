@@ -28,10 +28,10 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              PM<span className="text-primary">.</span>
+              NOE<span className="text-primary">.</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Nwankwo Ernest O. All rights reserved.
+              © {currentYear} Nwankwo Onyebuchi E. All rights reserved.
             </p>
           </div>
 
@@ -41,6 +41,8 @@ export const Footer = () => {
               <a
                 key={link.href}
                 href={link.href}
+                rel="noopener"
+                target="_blank"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
