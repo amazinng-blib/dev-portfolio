@@ -24,6 +24,9 @@ const skills = [
   'Css3',
   'Javascript',
   'Docker',
+  'Neon DB',
+  'Drizzle ORM',
+  'Turso DB',
 ];
 
 const handleDownloadCV = () => {
@@ -177,8 +180,8 @@ export const Hero = () => {
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with:
           </p>
-          <div className="relative overflow-hidden">
-            <div className="flex animate-marquee">
+          <div className="relative overflow-hidden w-full">
+            <div className="flex w-max animate-marquee gap-8">
               {[...skills, ...skills].map((skill, skillIdx) => (
                 <div key={skillIdx} className="shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
