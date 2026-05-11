@@ -41,7 +41,7 @@ export const Footer = () => {
               <a
                 key={link.href}
                 href={link.href}
-                rel="noopener"
+                rel="noreferrer"
                 target="_blank"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
